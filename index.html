@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TÍTULO DE LA PÁGINA -->
+
+    <title>Wrixy</title>
+
+    <!-- LINKS CSS -->
+
+        <!-- Universal (poner siempre) -->
+
+        <link rel="stylesheet" href="./css/universal.css">
+        
+        <!-- Iconos -->
+
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- Navbar CSS -->
+        
+        <link rel="stylesheet" href="./css/navbar.css">
+
+        <!-- Home CSS -->
+
+        <link rel="stylesheet" href="./css/home.css">
+
+</head>
+<body>
+
+    <!-- Barra de inicio con buscador y botón de usuario-->
+
+    <nav class="navbar_home">
+        <div class="wrixy_navbar_logo">
+            <object data="./content/logo_images/wrixy_logo_big.svg"></object>
+        </div>
+        <div class="navbar_search">
+            <form id="navbar_search_form">
+
+                <button type="submit">
+                    <i class='bx bx-search bx-flip-horizontal' ></i>
+                </button>
+
+                <input type="text" placeholder="Descubre una nueva aventura">
+
+                <button class="navbar_search_filter">
+                    <i class='bx bx-filter'></i>
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="navbar_profile">
+            <div class="navbar_profile_img">
+                <img src="https://waifus.wiki/wp-content/uploads/2021/07/rikka-takanashi-1.jpg">
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Menú principal -->
+
+    <div class="menu_buttons">
+
+        <a href="index.html" target="_blank" rel="noopener noreferrer">
+            <button class="menu_button1">
+                Inicio
+            </button>
+        </a>
+        <a href="./html/comunidad.html" target="_blank" rel="noopener noreferrer">
+            <button class="menu_button1">
+                Comunidad
+            </button>
+        </a>
+
+    </div>
+
+    <div class="home_trends">
+        <div class="trend_left">
+            <div class="trend_hot">
+                <i class='bx bxs-hot'></i>
+                <p>Más populares</p>
+            </div>
+            <div class="trend_book">
+                <div class="trend_book_image">
+                    <img src="https://img.wattpad.com/cover/63723384-352-k71916.jpg" alt="">
+                </div>
+                <div class="trend_book_info">
+                    <h1 class="trend_book_info_name">
+                        Filosofía de Dalas
+                    </h1>
+                    <div class="trend_book_info_stats">
+                        <div class="trend_book_info_stat">
+                            <p>175K</p>
+                            <i class='bx bxs-show' ></i>
+                        </div>
+                        <div class="trend_book_info_stat">
+                            <p>1750</p>
+                            <i class='bx bxs-message-square-dots' ></i>
+                        </div>
+                        <div class="trend_book_info_stat">
+                            <p>175K</p>
+                            <i class='bx bxs-heart' ></i>
+                        </div>
+                    </div>
+                    <div class="trend_book_info_desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloribus accusamus ab aliquid vitae aperiam consequuntur labore! In velit est adipisci autem accusamus laborum dolorem dolor magni nisi? Ducimus, repellat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ullam deleniti saepe ab quaerat, aliquam itaque repudiandae harum enim accusantium corporis et labore magni molestias, adipisci nam asperiores nobis amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ea ut ipsum quasi, sunt adipisci. Enim modi suscipit doloremque nobis voluptatem assumenda, cum illum aut quibusdam quis non minima nihil.</p>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="trend_book_info_author">
+                        <button >
+                            <i class='bx bxs-user' ></i> Dalas
+                        </button>
+                    </a>
+                    <div class="trend_book_info_tags">
+                        <a href="#">Humor</a>
+                        <a href="#">Espiritual</a>
+                        <a href="#">Romance</a>
+                    </div>
+                   
+                </div>
+                <div class="background_image">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="trend_right">
+            <div class="trend_book_small">
+                <div class="trend_book_image_small">
+                    <img src="https://img.wattpad.com/cover/63723384-352-k71916.jpg" alt="">
+                </div>
+                <div class="trend_book_small_info">
+                    <h1 class="trend_book_small_info_name">
+                        Filosofía de Dalas
+                    </h1>
+                    <div class="trend_book_small_info_stats">
+                        <div class="trend_book_small_info_stat">
+                            <p>175K</p>
+                            <i class='bx bxs-show' ></i>
+                        </div>
+                        <div class="trend_book_small_info_stat">
+                            <p>1750</p>
+                            <i class='bx bxs-message-square-dots' ></i>
+                        </div>
+                        <div class="trend_book_small_info_stat">
+                            <p>175K</p>
+                            <i class='bx bxs-heart' ></i>
+                        </div>
+                    </div>
+                    <div class="trend_book_small_info_desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloribus accusamus ab aliquid vitae aperiam consequuntur labore! In velit est adipisci autem accusamus laborum dolorem dolor magni nisi? Ducimus, repellat?</p>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="trend_book_small_info_author">
+                        <button >
+                            <i class='bx bxs-user' ></i> Dalas
+                        </button>
+                    </a>
+                    <div class="trend_book_small_info_tags">
+                        <a href="#">Humor</a>
+                        <a href="#">Espiritual</a>
+                        <a href="#">Romance</a>
+                    </div>
+                </div>
+            </div>
+            <div class="trend_book_small">
+                <div class="trend_book_image_small">
+                    <img src="https://img.wattpad.com/cover/63723384-352-k71916.jpg" alt="">
+                </div>
+                <div class="trend_book_small_info">
+                    <h1 class="trend_book_small_info_name">
+                        Filosofía de Dalas
+                    </h1>
+                    <div class="trend_book_small_info_stats">
+                        <div class="trend_book_small_info_stat">
+                            <p>175K</p>
+                            <i class='bx bxs-show' ></i>
+                        </div>
+                        <div class="trend_book_small_info_stat">
+                            <p>1750</p>
+                            <i class='bx bxs-message-square-dots' ></i>
+                        </div>
+                        <div class="trend_book_small_info_stat">
+                            <p>175K</p>
+                            <i class='bx bxs-heart' ></i>
+                        </div>
+                    </div>
+                    <div class="trend_book_small_info_desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloribus accusamus ab aliquid vitae aperiam consequuntur labore! In velit est adipisci autem accusamus laborum dolorem dolor magni nisi? Ducimus, repellat?</p>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="trend_book_small_info_author">
+                        <button >
+                            <i class='bx bxs-user' ></i> Dalas
+                        </button>
+                    </a>
+                    <div class="trend_book_small_info_tags">
+                        <a href="#">Humor</a>
+                        <a href="#">Espiritual</a>
+                        <a href="#">Romance</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
