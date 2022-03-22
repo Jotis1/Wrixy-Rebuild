@@ -16,7 +16,7 @@
 - [ ] Panel de Usuario (aún se me ocurren ideas para todo lo que puede llevar).
 - [ ] Disponible para varios lenguajes.
 - [ ] Apartados para Declaración de Privacidad, Uso de Cookies, ADS, etc.\
-✅ Quererse a sí mismo (quiéranse).
+-✅ Quererse a sí mismo (quiéranse).
 
 # INFORMACIÓN EXTRA
 
