@@ -8,7 +8,7 @@
 
 # OBJETIVOS
 
-✅ Menú principal adaptable con barra de búsqueda funcional y con filtros *[22/03/2022]* <br/>
+✅ Menú principal adaptable con barra de búsqueda funcional y con filtros (mañana lo termino) *[22/03/2022]* <br/>
 ✅ Quererse a sí mismo (quiéranse).<br/>
 🔲 Pestaña de Comunidad con foros funcionales, hilos, bandeja de emojis personalizados, notificaciones y que acepte imágenes, vídeos y gifs (imágenes y vídeos no muy pesados).<br/>
 🔲 Página de libros con tags, descripción, autor, capítulos, idioma, estadísticas y botones exclusivos del autor (como editar, borrar, renombrar, ver estadísticas -avanzadas y foro propio del relato).<br/>
