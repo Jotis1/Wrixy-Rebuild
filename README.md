@@ -8,7 +8,7 @@
 
 # OBJETIVOS
 
-- [x] Menú principal adaptable con barra de búsqueda funcional y con filtros *[22/03/2022]*
+- [X] Menú principal adaptable con barra de búsqueda funcional y con filtros *[22/03/2022]*
 - [ ] Pestaña de Comunidad con foros funcionales, hilos, bandeja de emojis personalizados, notificaciones y que acepte imágenes, vídeos y gifs (imágenes y vídeos no muy pesados).
 - [ ] Página de libros con tags, descripción, autor, capítulos, idioma, estadísticas y botones exclusivos del autor (como editar, borrar, renombrar, ver estadísticas avanzadas y foro propio del relato),
 - [ ] Pestaña para leer el libro con opciones de cascada, modo lectura (reducción del color azul), bajada (scroll) automática, botones de movilidad y tema oscuro.
