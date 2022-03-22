@@ -15,7 +15,7 @@
 - [ ] Menú de ajustes (aún se me ocurren ideas para todo lo que puede llevar).
 - [ ] Panel de Usuario (aún se me ocurren ideas para todo lo que puede llevar).
 - [ ] Disponible para varios lenguajes.
-- [ ] Apartados para Declaración de Privacidad, Uso de Cookies, ADS, etc.
+- [ ] Apartados para Declaración de Privacidad, Uso de Cookies, ADS, etc.<br/>
 ✅ Quererse a sí mismo (quiéranse).
 
 # INFORMACIÓN EXTRA
