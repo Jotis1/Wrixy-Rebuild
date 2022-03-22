@@ -6,9 +6,9 @@
 > - TODO está escrito a mano y sin usar ningúna app de desarrollo web como Boostrap Studio (por que no me divertía).
 > - No formé ni formo parte del equipo de desarrollo de Wrixy. Esto es por puro entretenimiento y no tengo como objetivo lucrarme.
 
-#### OBJETIVOS
+#OBJETIVOS
 
-- [X] Menú principal adaptable con barra de búsqueda funcional y con filtros *[22/03/2022]*
+- ✅ Menú principal adaptable con barra de búsqueda funcional y con filtros *[22/03/2022]*
 - [ ] Pestaña de Comunidad con foros funcionales, hilos, bandeja de emojis personalizados, notificaciones y que acepte imágenes, vídeos y gifs (imágenes y vídeos no muy pesados).
 - [ ] Página de libros con tags, descripción, autor, capítulos, idioma, estadísticas y botones exclusivos del autor (como editar, borrar, renombrar, ver estadísticas avanzadas y foro propio del relato),
 - [ ] Pestaña para leer el libro con opciones de cascada, modo lectura (reducción del color azul), bajada (scroll) automática, botones de movilidad y tema oscuro.
@@ -16,7 +16,7 @@
 - [ ] Panel de Usuario (aún se me ocurren ideas para todo lo que puede llevar).
 - [ ] Disponible para varios lenguajes.
 - [ ] Apartados para Declaración de Privacidad, Uso de Cookies, ADS, etc.
-- [x] Quererse a sí mismo (quiéranse).
+- ✅ Quererse a sí mismo (quiéranse).
 
 # INFORMACIÓN EXTRA
 
