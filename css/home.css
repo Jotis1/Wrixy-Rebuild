@@ -1,535 +1,333 @@
-::-webkit-scrollbar {
-  display: none;
-}
-
-.menu_buttons {
-  display: flex;
-  width: 90%;
-  margin: 30px auto;
-  height: 70px;
-  justify-content: center;
-  text-align: center;
-  line-height: 70px;
-}
-
-.menu_buttons a {
-  width: 50%;
-  border-bottom: 2px solid transparent;
-  transition: ease-in 0.2s;
-}
-
-.menu_buttons a button {
-  height: 50px;
-  width: 80%;
-  font-size: 1.3em;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  color: var(--grey100);
-  transition: ease-in 0.2s;
-  text-transform: uppercase;
-  border-bottom: 2px solid transparent;
-}
-
-.menu_buttons a:hover button {
-  border: none;
-  border-bottom: 2px solid var(--pink100);
-  color: var(--grey60);
-  transition: ease-in 0.2s;
-}
-
-.menu_button_active {
-  background-color: var(--pink100) !important;
-  border-radius: 10px;
-  color: var(--white) !important;
-}
-
-.menu_buttons a:hover .menu_button_active {
-  background-color: var(--pink60) !important;
-  border-radius: 10px;
-  color: var(--white) !important;
-}
-
-.home_trends {
-  display: flex;
-  width: 90%;
-  margin: 50px auto;
-  justify-content: space-around;
-}
-
-.trend_hot {
-  display: flex;
-  background-color: var(--pink100);
-  width: 200px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  line-height: 40px;
-  border-radius: 10px 0 10px 0;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.trend_right {
+.pageSelector {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 50%;
+  width: 200px;
+  height: calc(100vh - 80px);
+  background-color: var(--pink10);
+  padding: 10px;
+  border: none;
+  border-right: 2px solid var(--pink10);
 }
 
-.trend_left {
-  width: 50%;
+.pageSelector button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--grey100);
+  font-weight: 600;
+  transition: ease-in 0.1s;
+}
+
+.pageSelector button i {
+  margin-right: 5px;
+}
+
+.pageSelectorActive {
+  background-color: var(--pink10) !important;
+}
+
+.pageSelector button:hover {
+  background-color: var(--pink10);
+  transition: ease-in 0.1s;
+}
+
+.trend_icon {
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: rgba(255, 0, 128, 0.667);
+  color: white;
+  border-radius: 10px 0 10px 0;
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.667);
+}
+
+.web_content {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .web_content {
+    flex-direction: column;
+  }
+
+  .pageSelector {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+  }
+
+  .web {
+    height: auto !important;
+  }
+}
+
+.web {
+  height: calc(100vh - 80px);
+  width: 100%;
+  overflow: auto;
+}
+
+.books {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
 }
 
 .trend_book {
-  margin: 70px auto;
+  margin: 30px 10px;
   display: flex;
-  justify-content: space-around;
-}
-.trend_book_info {
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  width: fit-content;
 }
 
-.trend_book_info_name {
-  font-size: 45px;
-  color: var(--grey100);
-}
-
-.trend_book_info_stats {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  height: 50px;
-  user-select: none;
-}
-
-.trend_book_info_stat {
-  display: flex;
-  margin: 0 10px;
-  color: var(--grey60);
-  font-size: 1em;
-}
-
-.trend_book_info_desc {
-  color: var(--grey100);
-  font-weight: 600;
-  line-height: 25px;
-  max-height: 200px;
-  overflow: auto;
-}
-
-.trend_book_info_author {
-  display: block;
-  width: 100px;
-  background-color: var(--pink100);
-  height: 35px;
-  line-height: 35px;
-  border-radius: 10px;
+.trend_book:hover {
+  background-color: var(--pink10);
   cursor: pointer;
-}
-
-.trend_book_info_author button {
-  background-color: transparent;
-  border: none;
-  width: 100px;
-  color: var(--white);
-  cursor: pointer;
-}
-
-.trend_book_info_tags {
-  display: flex;
-  justify-content: start;
-  height: 10%;
-  align-items: center;
-}
-
-.trend_book_info_tags a {
-  margin-right: 10px;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--white);
-  background-color: var(--pink60);
-  padding: 1%;
   border-radius: 10px;
 }
 
-.trend_book_image {
-  width: 100%;
-  height: 400px;
-  padding: 2px;
-  border: 2px solid var(--grey100);
-  border-radius: 0 10px 10px 10px;
-}
-
-.trend_book_image img {
-  width: auto;
-  height: 392px;
-  object-fit: cover;
-  border-radius: 0 5px 5px 5px;
-}
-
-.trend_book_small {
-  display: flex;
-  margin: 15px 0;
-  height: 50%;
-}
-
-.trend_book_image_small {
+.trend_book_img {
+  width: 200px;
   height: 300px;
-  padding: 2px;
-  border: 2px solid var(--grey100);
-  border-radius: 0 10px 10px 10px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.trend_book_image_small img {
-  width: auto;
-  height: 100%;
+.trend_book_img img {
   object-fit: cover;
-  border-radius: 0 5px 5px 5px;
+  width: 100%;
 }
 
-.trend_book_small_info {
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.trend_book_small_info_name {
+.trend_book_details h1 {
+  margin: 0 10px;
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: var(--grey100);
 }
 
-.trend_book_small_info_stats {
+.trend_book_details_stats {
+  margin: 10px 0;
   display: flex;
-  justify-content: start;
-  align-items: center;
-  height: 40px;
+  width: 300px;
   user-select: none;
 }
 
-.trend_book_small_info_stat {
-  display: flex;
+.trend_book_details_stats div {
   margin: 0 10px;
-  color: var(--grey60);
-  font-size: 1em;
-}
-
-.trend_book_small_info_desc {
-  width: 75%;
   color: var(--grey100);
-  font-weight: 600;
-  line-height: 25px;
-  max-height: 140px;
+}
+
+.trend_book_details_desc {
+  width: 300px;
   overflow: auto;
+  max-height: 150px;
+  margin: 0 10px;
+  color: var(--grey100);
 }
 
-.trend_book_small_info_author {
+.trend_book_details_desc::-webkit-scrollbar {
+  display: none;
+}
+
+#trend_book1 .trend_book_img {
+  width: 300px !important;
+  height: 400px;
+}
+
+#trend_book1 .trend_book_details {
+  width: 415px;
+  height: 400px;
+}
+
+#trend_book1 h1 {
+  font-size: 3em;
+}
+
+#trend_book1 .trend_book_details_stats {
+  width: 400px;
+  font-size: 1.1em;
+}
+
+#trend_book1 .trend_book_details_desc {
+  font-size: 1.2em;
+  width: 400px;
+  max-height: 210px;
+}
+
+.book_author {
   display: block;
-  width: 100px;
-  background-color: var(--pink100);
-  height: 35px;
-  line-height: 35px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.trend_book_small_info_author button {
-  background-color: transparent;
-  border: none;
-  width: 100px;
-  color: var(--white);
-  cursor: pointer;
-}
-
-.trend_book_small_info_tags {
-  display: flex;
-  justify-content: start;
-  height: 10%;
-  align-items: center;
-}
-
-.trend_book_small_info_tags a {
-  margin-right: 10px;
-  display: inline-block;
+  text-align: center;
+  min-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  line-height: 30px;
+  margin: 10px 10px;
+  height: 30px;
+  background-color: var(--pink10);
+  color: var(--grey100);
   text-decoration: none;
-  color: var(--white);
-  background-color: var(--pink60);
-  padding: 1%;
   border-radius: 10px;
 }
 
-@media screen and (max-width: 1300px) {
-  .home_trends {
+.trend_book a i {
+  margin: 0 5px;
+  transform: translateY(1px);
+}
+
+.trend_book_details_tags {
+  display: flex;
+  width: 300px;
+  overflow: hidden;
+}
+
+.trend_book_details_tags a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  text-align: center;
+  background-color: var(--pink60);
+}
+
+@media screen and (max-width: 1450px) {
+  .trend_icon {
+    margin: 20px auto;
+  }
+
+  #trend_book1 {
+    margin: 0 auto;
     display: flex;
+    justify-content: start;
+  }
+
+  #trend_book1 .trend_book_details {
+    width: calc(100% - 300px) !important;
+  }
+
+  #trend_book1 .trend_book_details_desc {
+    width: calc(100% - 20px);
+    height: auto !important;
+  }
+
+  .books {
     flex-direction: column;
-    width: 90%;
-    margin: 50px auto;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .trend_book {
-    background-color: var(--white);
-    border-radius: 5px;
-  }
-
-  .trend_left {
-    width: 100%;
-  }
-
-  .trend_right {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    justify-content: space-between;
   }
 }
 
-@media screen and (max-width: 1064px) {
-  .home_trends {
+@media screen and (max-width: 610px) {
+  .web {
     display: flex;
+    margin: 0 auto;
+    width: 98%;
     flex-direction: column;
-    width: 90%;
-    margin: 50px auto;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .trend_left {
-    width: 100%;
-  }
-
-  .trend_right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .trend_book_small {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .home_trends {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    justify-content: stretch;
-  }
-
-  .trend_hot {
-    display: flex;
-    background-color: var(--pink100);
-    width: 100%;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    line-height: 40px;
-    border-radius: 10px 0 10px 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
-
-  .trend_right {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    width: 100%;
-  }
-
-  .trend_left {
-    width: 100%;
-  }
-
-  .trend_book {
-    margin: 70px auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .trend_book_info {
-    margin: 0 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .trend_book_info_name {
-    font-size: 45px;
-    color: var(--grey100);
-  }
-
-  .trend_book_info_stats {
-    display: flex;
     justify-content: start;
     align-items: center;
-    height: 50px;
-    user-select: none;
   }
 
-  .trend_book_info_stat {
-    display: flex;
-    margin: 0 5px;
-    color: var(--grey60);
-    font-size: 1em;
-  }
-
-  .trend_book_info_desc {
-    color: var(--grey100);
+  .books {
     width: 100%;
-    font-weight: 600;
-    line-height: 25px;
-    max-height: 120px;
-    overflow: auto;
+    margin: 0;
   }
 
-  .trend_book_info_author {
-    display: block;
-    width: 100px;
-    background-color: var(--pink100);
-    height: 35px;
-    line-height: 35px;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  .trend_book_info_author button {
-    background-color: transparent;
-    border: none;
-    width: 100px;
-    color: var(--white);
-    cursor: pointer;
-  }
-
-  .trend_book_info_tags {
-    display: flex;
-    justify-content: start;
-    height: 10%;
+  #trend_book1 {
+    width: 100%;
+    display: flex !important;
     align-items: center;
-  }
-
-  .trend_book_info_tags a {
-    margin-right: 10px;
-    display: inline-block;
-    text-decoration: none;
-    color: var(--white);
+    flex-direction: column !important;
+    text-align: center;
     background-color: var(--pink60);
-    padding: 5px;
     border-radius: 10px;
   }
 
-  .trend_book_image {
-    width: 100%;
-    height: 400px;
-    padding: 2px;
-    border: 2px solid transparent;
-    border-radius: 0 10px 10px 10px;
-  }
-
-  .trend_book_image img {
-    width: auto;
-    height: 392px;
-    object-fit: cover;
-    border-radius: 0 5px 5px 5px;
-  }
-
-  .trend_book_small {
+  #trend_book1 .trend_book_details {
     display: flex;
-    margin: 15px 0;
-    height: 50%;
-  }
-
-  .trend_book_image_small {
-    height: 300px;
-    padding: 2px;
-    border: 2px solid transparent;
-    border-radius: 0 10px 10px 10px;
-  }
-
-  .trend_book_image_small img {
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0 5px 5px 5px;
-  }
-
-  .trend_book_small_info {
-    margin: 0 20px;
-    display: flex;
+    width: 100% !important;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
   }
 
-  .trend_book_small_info_name {
-    color: var(--grey100);
+  #trend_book1 .trend_book_details h1 {
+    margin: 0;
+    width: 100%;
   }
 
-  .trend_book_small_info_stats {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 40px;
-    user-select: none;
+  #trend_book1 .trend_book_img {
+    width: 100% !important;
   }
 
-  .trend_book_small_info_stat {
-    display: flex;
-    margin: 0 10px;
-    color: var(--grey60);
-    font-size: 1em;
+  #trend_book1 .trend_book_details_stats {
+    margin: 10px 0;
+    width: 100%;
+    justify-content: center;
   }
 
-  .trend_book_small_info_desc {
-    width: 75%;
-    color: var(--grey100);
-    font-weight: 600;
-    line-height: 25px;
-    max-height: 140px;
-    overflow: auto;
-  }
-
-  .trend_book_small_info_author {
-    display: block;
-    width: 100px;
+  #trend_book1 .book_author {
+    margin: 10px auto;
     background-color: var(--pink100);
-    height: 35px;
-    line-height: 35px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 5px;
   }
 
-  .trend_book_small_info_author button {
-    background-color: transparent;
-    border: none;
-    width: 100px;
-    color: var(--white);
-    cursor: pointer;
+  #trend_book1 .trend_book_details_tags {
+    margin: 10px auto;
   }
 
-  .trend_book_small_info_tags {
-    display: flex;
-    justify-content: start;
-    height: 10%;
+  .trends_book .trend_book {
+    margin: 20px auto;
+    flex-direction: column;
     align-items: center;
+    justify-content: start;
+    text-align: center;
   }
 
-  .trend_book_small_info_tags a {
-    margin-top: 5px;
-    margin-right: 10px;
-    display: inline-block;
-    text-decoration: none;
-    color: var(--white);
+  .trends_book .trend_book:not(:last-child) {
+    border-bottom: 2px solid var(--grey100);
+  }
+
+  .trends_book .trend_book_details_stats {
+    justify-content: center;
+    margin: 5px auto;
+  }
+
+  .trends_book .trend_book_details h1 {
+    margin: 5px auto;
+    width: 100%;
+  }
+
+  .trends_book .trend_book_details_desc {
+    width: 100% !important;
+    margin: 5px auto;
+  }
+
+  .trends_book .book_author {
+    margin: 10px auto;
     background-color: var(--pink60);
-    padding: 5px;
-    border-radius: 10px;
+  }
+
+  .trends_book .trend_book_details_tags {
+    margin: 20px auto;
   }
 }

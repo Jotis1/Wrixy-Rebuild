@@ -1,158 +1,265 @@
-.navbar_home {
+nav {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 80px;
+  align-items: center;
+  background-color: var(--pink10);
+  border-bottom: 2px solid var(--pink10);
+}
+
+.nav_search {
+  width: 50%;
+  height: 50px;
+}
+
+.nav_search button[type="submit"] {
+  height: 50px;
+  width: 50px;
   background-color: white;
-  line-height: 70px;
+  border-radius: 50% 0 0 50%;
+  border: none;
+  cursor: pointer;
+  color: var(--grey100);
+  transform: translateX(4px);
+}
+
+.nav_search button[type="submit"]:hover i {
+  transform: scale(1.1);
+}
+
+.nav_search button[type="submit"] i {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 52px;
+  font-size: 1.2em;
+  transition: ease-in 0.2s;
+}
+
+#search_input {
+  width: calc(100% - 110px);
+  height: 50px;
+  padding: none;
+  border: none;
+  outline: none;
+  transform: translateY(-3px);
+  color: var(--grey100);
+}
+
+.filter_button {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 0 50% 50% 0;
+  border: none;
+  cursor: pointer;
+  color: var(--grey100);
+  transform: translateX(-4px);
+}
+
+.filter_button i {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 52px;
+  font-size: 1.2em;
+  transition: ease-in 0.2s;
+}
+
+.nav_search .filter_button:hover i {
+  transform: scale(1.1);
+}
+
+.nav_logo object {
+  height: 70px;
+}
+
+.nav_login {
+  display: none;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
   box-shadow: 0 0 15px var(--pink100);
 }
 
-.wrixy_navbar_logo {
-  margin: 12.5px;
-  height: 45px;
-  width: auto;
+.userImage {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.userImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav_noLogin {
+  display: block;
+  margin-right: 20px;
+  height: 50px;
+}
+
+.nav_noLogin button {
+  height: 50px;
+  width: 100px;
+  border-radius: 25px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px white;
+  color: var(--grey100);
+}
+
+.nav_noLogin button:nth-child(1) {
+  background-color: var(--pink100);
+  box-shadow: 0 0 15px var(--pink100);
+  color: white;
+}
+
+.search_related {
+  padding: 5px;
+  opacity: 0;
+  display: none;
+  position: relative;
+  width: calc(100% - 10px);
+  transform: translateY(12px);
+  margin: 0 auto;
+  background-color: white;
+  max-height: calc(80px * 3 + 20px);
+  overflow: auto;
   transition: ease-in 0.2s;
 }
 
-.wrixy_navbar_logo object {
-  margin-top: calc();
-  height: 100%;
+.nav_suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
 }
 
-.navbar_search {
-  margin: 10px;
+.search_related::-webkit-scrollbar {
+  display: none;
+}
+
+.nav_suggestion:last-child {
+  margin-bottom: 0px;
+}
+
+.nav_suggestion h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--grey100);
   text-align: center;
-  width: 50%;
-  height: 50px;
-  line-height: 50px;
-  border-bottom: 2px solid transparent;
+  max-width: calc(70% - 55px);
   transition: ease-out 0.2s;
 }
 
-.navbar_search:focus-within {
-  border-bottom: 2px solid var(--pink100);
+.nav_suggestion:hover h1 {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
   transition: ease-in 0.2s;
 }
 
-.navbar_search input {
-  width: 80%;
-  height: 40px;
-  border: none;
-  outline: none;
-  color: var(--grey100);
-  font-weight: 600;
-  font-size: 1em;
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
 
-.navbar_search input::placeholder {
-  color: var(--grey60);
-  font-weight: 600;
+.nav_suggestion p {
+  display: block;
+  line-height: 40px;
   text-align: center;
-}
-
-.navbar_search form button {
-  width: 40px;
-  transform: translateY(2px);
+  width: 200px;
+  max-width: calc(20% - 55px);
   height: 40px;
-  font-size: 20px;
-  background-color: transparent;
-  border: none;
+  max-width: 20%;
+  background-color: var(--pink60);
+  border-radius: 15px;
   color: var(--grey100);
-  cursor: pointer;
+  font-weight: 700;
 }
 
-.navbar_profile {
-  margin: 10px;
-  cursor: pointer;
-}
-
-.navbar_profile_img {
-  width: 50px;
-  height: 50px;
+.nav_suggestion img {
+  height: 80px;
+  width: 55px;
   object-fit: cover;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: ease-in 0.2s;
 }
 
-.navbar_profile_img img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%;
-  transition: ease-in 0.2s;
-}
-
-.navbar_profile_img:hover img {
-  transition: ease-in 0.2s;
-  width: 60px;
-  height: 60px;
-  transform: translate(-5px, -5px);
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-@media screen and (max-width: 875px) {
-  .navbar_home {
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 1000px) {
+  nav {
     flex-direction: column;
-    align-items: center;
-    height: auto;
-    background-color: white;
-    line-height: 70px;
-    box-shadow: 0 0 15px var(--pink100);
+    justify-content: space-around;
+    height: 250px;
   }
 
-  .wrixy_navbar_logo {
-    margin: 12.5px 0;
-    height: 70px;
-    width: auto;
-  }
-
-  .navbar_search {
-    margin: 10px;
-    text-align: center;
-    width: 100%;
+  .nav_search {
+    width: 80%;
     height: 50px;
-    line-height: 50px;
-    border-bottom: 2px solid transparent;
-    transition: ease-out 0.2s;
+  }
+
+  .search_related {
+    width: 92%;
+    transform: translateY(-3px);
+  }
+
+  .nav_noLogin {
+    margin: 0 auto !important;
   }
 }
 
-@media screen and (max-width: 440px) {
-  .navbar_home {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    background-color: white;
-    line-height: 70px;
-    box-shadow: 0 0 15px var(--pink100);
-  }
+.nav_filter {
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  background-color: white;
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  height: 140px;
+  position: relative;
+  transform: translateY(12px);
+  transition: ease-in 0.2s;
+}
 
-  .wrixy_navbar_logo {
-    margin: 12.5px 0;
-    height: 70px;
-    width: auto;
-  }
+.filter_up,
+.filter_down {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  .navbar_search {
-    margin: 10px 0;
-    width: 100%;
-    line-height: 50px;
-    border-bottom: 2px solid transparent;
-    transition: ease-out 0.2s;
-  }
+.filter_up div,
+.filter_down div {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  width: 20%;
+  color: var(--grey100);
+  font-weight: 600;
+}
 
-  .navbar_search form {
-    display: flex;
-  }
-
-  .navbar_search input,
-  .navbar_search form button {
-    width: auto;
-  }
+.nav_filter input {
+  cursor: pointer;
 }

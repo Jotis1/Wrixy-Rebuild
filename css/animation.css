@@ -1,0 +1,71 @@
+.animation_div {
+  position: absolute;
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #cea3e6;
+  transition: ease-out 0.5s;
+  z-index: 99;
+}
+
+.animation_ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--pink100);
+  animation-name: ball_animation;
+  animation-duration: 0.5s;
+}
+
+.animation_ball img {
+  width: calc(100% - 50px);
+}
+
+.animation_ball2 {
+  position: absolute;
+  background-color: var(--pink10);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--pink100);
+  animation-name: ball1_animation;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+}
+
+@keyframes ball_animation {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  70% {
+    width: 400px;
+    height: 400px;
+  }
+  100% {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@keyframes ball1_animation {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  70% {
+    width: 450px;
+    height: 450px;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+  }
+}
